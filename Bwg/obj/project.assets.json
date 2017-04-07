@@ -9813,10 +9813,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\Bwg\\Bwg\\Bwg\\Bwg.csproj",
+      "projectUniqueName": "D:\\Work\\GitProjects\\BwgSite\\Bwg\\Bwg.csproj",
       "projectName": "Bwg",
-      "projectPath": "D:\\Work\\Bwg\\Bwg\\Bwg\\Bwg.csproj",
-      "outputPath": "D:\\Work\\Bwg\\Bwg\\Bwg\\obj\\",
+      "projectPath": "D:\\Work\\GitProjects\\BwgSite\\Bwg\\Bwg.csproj",
+      "outputPath": "D:\\Work\\GitProjects\\BwgSite\\Bwg\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

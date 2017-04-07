@@ -7,3 +7,12 @@ D:\Work\Bwg\Bwg\Bwg\obj\Debug\netcoreapp1.1\Bwg.csprojResolveAssemblyReference.c
 D:\Work\Bwg\Bwg\Bwg\obj\Debug\netcoreapp1.1\Bwg.AssemblyInfo.cs
 D:\Work\Bwg\Bwg\Bwg\obj\Debug\netcoreapp1.1\Bwg.dll
 D:\Work\Bwg\Bwg\Bwg\obj\Debug\netcoreapp1.1\Bwg.pdb
+D:\Work\GitProjects\BwgSite\Bwg\bin\Debug\netcoreapp1.1\Bwg.deps.json
+D:\Work\GitProjects\BwgSite\Bwg\bin\Debug\netcoreapp1.1\Bwg.runtimeconfig.json
+D:\Work\GitProjects\BwgSite\Bwg\bin\Debug\netcoreapp1.1\Bwg.runtimeconfig.dev.json
+D:\Work\GitProjects\BwgSite\Bwg\bin\Debug\netcoreapp1.1\Bwg.dll
+D:\Work\GitProjects\BwgSite\Bwg\bin\Debug\netcoreapp1.1\Bwg.pdb
+D:\Work\GitProjects\BwgSite\Bwg\obj\Debug\netcoreapp1.1\Bwg.csprojResolveAssemblyReference.cache
+D:\Work\GitProjects\BwgSite\Bwg\obj\Debug\netcoreapp1.1\Bwg.AssemblyInfo.cs
+D:\Work\GitProjects\BwgSite\Bwg\obj\Debug\netcoreapp1.1\Bwg.dll
+D:\Work\GitProjects\BwgSite\Bwg\obj\Debug\netcoreapp1.1\Bwg.pdb
