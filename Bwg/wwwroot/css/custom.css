@@ -1,0 +1,110 @@
+html { font-size: 80% }
+body { color: #555; font-family: roboto; font-size: 1.1em; line-height: 1.5; }
+h1, h2, h3, h4, h5, h6 { font-family: roboto; text-align: center; }
+a { color: #3baa35; }
+a:hover, button { color: #F0D8D9; -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; transition: all 0.2s ease-out; outline:none; }
+a:hover, a:focus { color: #BA383D; outline: medium none; text-decoration: none }
+::-moz-selection {
+color: #fff;
+background: #3baa35;
+}
+::selection {
+color: #fff;
+background: #3baa35;
+}
+img { vertical-align: middle; max-width: 100%; height:auto; width: 100%; }
+ul { list-style: none; }
+
+/* ==========================================================
+                  TitleSection 
+============================================================= */
+.TitleSection { margin-bottom: 40px; padding:0; width:100% }
+.page-head:before { background:  #303441; content: ""; display: block; height: 2px; left: 50%; position: absolute; width: 140px; -webkit-transform:translate(-50%, 0px); -moz-transform:translate(-50%, 0px); -ms-transform:translate(-50%, 0px); -o-transform:translate(-50%, 0px); transform:translate(-50%, 0px); }
+.page-head:before { bottom: -1px; }
+.page-head { border-bottom: 1px solid #A3A7B9; padding: 5px 0; position: relative; width: 100%; text-align:center }
+.page-head small { color: #303441; }
+h1 small { font-size: 90% }
+
+/* ==========================================================
+            Header Area
+============================================================= */
+.header { background-color: #3baa35 }
+.logo { background: url("../images/logo.png") no-repeat scroll 0 0 transparent; margin-left: 10px; height:70px; text-indent: -9999px; width: 88px; }
+
+/**bootstrap over style for menu**/
+.navbar-default{ background-color: #303441; border-bottom: 2px solid #4A4F5E; top:0; left: 0; position: fixed; right: 0; z-index: 1030; margin-bottom: 20px; min-height: 70px;}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #3baa35;
+}
+.navbar-default .navbar-nav > li > a{ color: #A3A7B9; font-weight: bold; font-style: bold; text-transform: uppercase; margin-top: 10px;}
+
+/**small menu**/
+.navbar-default .navbar-toggle {border-color: #3baa35;border: 0 none;}
+.navbar-default .navbar-toggle .icon-bar {background-color: #3baa35}
+.navbar-toggle .icon-bar {border-radius: 0;display: block;height: 4px;width: 30px}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color: #3baa35;border-radius: 0 0 0 0;}
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar{background-color: #303441}
+
+
+/* ==========================================================
+                services
+============================================================= */
+
+.file h3 {text-align: center;}
+
+.services, .about { background: #F2F2F2; border-bottom: 5px solid #FCFCFC; color: #666D89; padding: 50px 0; }
+.ser_wrap_3 { border-bottom: 1px solid #EDEDED; margin: 0; overflow: hidden; padding: 20px 0; }
+.ser_wrap_3 ul { overflow: hidden; padding: 0; }
+.ser_wrap_3 ul li { margin-bottom: 0; overflow: hidden; }
+.ser_wrap_3 .icon_ser { border: 1px solid #666D89; -moz-border-radius: 045px 45px 45px 45px; -webkit-border-radius: 45px 45px 45px 45px; border-radius: 45px 45px 45px 45px; color: #666D89; float: left; font-size: 1.9em; height: 50px; line-height: 50px; text-align: center; vertical-align: middle; width: 50px; }
+.ser_wrap_3 .wrap { float: left; margin: 0 0 10px 10px; width: 79%; }
+.ser_wrap_3.option2 ul li:hover .icon_ser { font-size:3.6em; }
+.ser_wrap_3 .wrap h3 {text-align: center; }
+.ser_wrap_3.option3 .icon_ser { border: 2px solid; display: block; float: none; font-size: 3em; height: 75px; line-height:75px; margin: 0 auto 20px; width:75px }
+.ser_wrap_3.option3 .wrap { float: none; width: 100%; }
+
+/* ==========================================================
+                About
+============================================================= */
+#about .page-head:before, #services .page-head:before { background:  #666D89 }
+#about .page-head small, #services .page-head small { color: #A3A7B9 }
+#about .page-head, #services .page-head { border-bottom: 1px solid #A3A7B9 }
+.hexagon { margin: 10px auto 5px; overflow: hidden; width: 193px }
+.portfolio-title { position: relative; float: left; width: 100%; height: 20px; overflow: hidden; margin-top: 5px; }
+.portfolio-title h4 { position: relative; line-height: 20px; width: 100%; text-align: center; margin:0; }
+.portfolio-title h4 span { width: 100%; position: absolute; margin: 0 auto; left: 0; color: #A3A7B9; top: 20px; }
+.hexagon a { float: left; width: 200px; height: 200px; overflow: hidden; display: block; position: relative; }
+.hexagon a img { position: absolute; left: 0; top: 0; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -o-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%); -webkit-transition: 300ms ease-out; -moz-transition: 300ms ease-out; -o-transition: 300ms ease-out; transition: 300ms ease-out; -webkit-backface-visibility: hidden; }
+.hexagon a img.hovering { left: 5px; -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -o-filter: grayscale(0%); -ms-filter: grayscale(0%); filter: grayscale(0%); }
+.about_wrap_one { margin-bottom: 45px; text-align: center; }
+.about_wrap_one p { margin-top:15px }
+.holder { overflow:hidden }
+.holder > img { transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; }
+.about_wrap { margin-top: 20px; }
+.about_data { overflow: hidden; padding: 15px; background-color:#EEEDED; }
+.about_data ul.title { margin:0 0 10px; padding: 0; }
+div.arrow { background: url("../img/arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); height: 9px; margin: -8px 0 0 17px; position: relative; width: 12px; }
+.about_data h2, .about_data h3, .about_data p { margin: 0; }
+.about_data h2 { font-size: 16px; line-height: 20px; margin-bottom: 3px; text-transform: uppercase; }
+.about_data h3 { font-size: 11px; line-height: 17px; text-transform: uppercase; }
+.about_data p { margin-top: 13px; }
+.about_social { border-top: 1px dotted #CCC; margin: 13px 0 0; overflow: hidden; padding: 13px 0 0 }
+.about_wrap_one .about_social { padding: 15px 13.5% 0 }
+.about_social li { border: 1px solid; border-radius: 50% 50% 50% 50%; height: 30px; line-height: 30px; margin-right: 8px; width: 30px; }
+.about_social li:hover { background-color:#666D89; border:none }
+.about_social li:hover a { color:#F2F2F2 }
+.about_social li a { font-size: 17px; padding: 0 5px; color:#666D89 }
+
+
+
+
+/* ==========================================================
+                Footer
+============================================================= */
+footer { background-color: #303441; border-bottom: 5px solid #4A4F5E; color: #3baa35; padding: 25px 0 10px }
+footer a { color: #3baa35 }
+.footer_social > li { border: 1px solid #3baa35; border-radius: 50% 50% 50% 50%; float: left; height: 25px; line-height: 25px; margin-right: 5px; text-align: center; width: 25px; }
+.footer_social > li:hover { background-color: #3baa35 }
+.footer_social > li:hover a { color: #303441; }
+.footer_social li.go_top { margin-left:15px; border:none }
+
