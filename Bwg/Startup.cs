@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Bwg
 {
@@ -20,7 +21,12 @@ namespace Bwg
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            environment = env;
+
         }
+
+        public IHostingEnvironment environment { get; set; }
 
         public IConfigurationRoot Configuration { get; }
 
@@ -29,6 +35,16 @@ namespace Bwg
         {
             // Add framework services.
             services.AddMvc();
+
+            services.Configure<MvcOptions>(options =>
+            {
+
+                if (environment.IsProduction())
+                {
+                    options.Filters.Add(new RequireHttpsAttribute());
+                }
+
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +52,8 @@ namespace Bwg
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+
 
             if (env.IsDevelopment())
             {

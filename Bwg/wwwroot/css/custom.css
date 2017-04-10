@@ -15,6 +15,10 @@ background: #3baa35;
 img { vertical-align: middle; max-width: 100%; height:auto; width: 100%; }
 ul { list-style: none; }
 
+.mycontent-left {
+  border-right: 1px solid #A3A7B9;
+}
+
 /* ==========================================================
                   TitleSection 
 ============================================================= */

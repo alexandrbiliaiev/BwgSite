@@ -1,20 +1,20 @@
 ﻿var app = angular.module('bwg', ['bwg.controllers', 'ui.router'])
 
 
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $locationProvider, $urlRouterProvider) {
 
-$urlRouterProvider.otherwise('/home');
+$urlRouterProvider.otherwise('/');
 
-    $stateProvider
-        .state('home', {
-            url: '/home',
-            templateUrl: 'templates/home.html'
-           
-        }).state('about', {
-            url: '/about',
-            templateUrl: 'templates/about.html'
-            
-        })
+$stateProvider
+    .state('home', {
+        url: '/',
+        templateUrl: 'templates/home.html'
+
+  //  }).state('about', {
+  //      url: '/about',
+ //       templateUrl: 'templates/about.html'
+
+    });
 
 });
 

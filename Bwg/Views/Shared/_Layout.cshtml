@@ -5,18 +5,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Bwg</title>
+    <title>Business Work Group</title>
 
     <environment names="Development">
+        
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="~/css/custom.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 
     </environment>
 
     <environment names="Staging,Production">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -37,13 +40,14 @@
             </div>
             <div class="navbar-collapse collapse ">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="" ng-click="goTo('home')">strona główna</a></li>
+                    <li><a href="/" >strona główna</a></li>
                     <li><a href="" ng-click="goTo('about')">o nas</a></li>
                     <li><a href="" ng-click="goTo('services')">zakres usług</a></li>
                     <li><a href="" ng-click="goTo('files')">Pliki do pobrania</a></li>
                     <li><a href="" ng-click="goTo('contact')">dane kontaktowe</a></li>
                     <li><a href="" ng-click="goTo('message')">napisz nam</a></li>
-                    <li><a href="">dla partnerów</a></li>
+                    <li><a href="" data-toggle="modal" data-target="#loginDialog">dla partnerów</a></li>
+                
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -92,7 +96,6 @@
         <script src="~/js/controllers/homeController.js"></script>
 
 
-
     </environment>
 
 
@@ -111,7 +114,6 @@
         <script src="~/js/app.js"></script>
 
         <script src="~/js/controllers/homeController.js"></script>
-
 
 
     </environment>
