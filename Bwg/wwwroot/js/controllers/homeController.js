@@ -18,6 +18,6 @@
         }
 
         $scope.goToRegister = function () {
-            $window.open('https://crm.bwg.com.pl/Account/Register/Contragent', '_blank');
+            $window.open('https://crm.bwg.com.pl/Account/RegisterContragent', '_blank');
         }
     })
