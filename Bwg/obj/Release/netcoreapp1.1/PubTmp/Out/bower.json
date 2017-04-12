@@ -7,6 +7,7 @@
     "angular-strap": "v2.3.12",
     "angular-bootstrap": "v1.1.0",
     "angular-ui-router": "1.0.0-rc.1",
-    "angular-route": "v1.6.5-build.5353+sha.136a42a"
+    "angular-route": "v1.6.5-build.5353+sha.136a42a",
+    "angular-ui-bootstrap": "2.5.0"
   }
 }

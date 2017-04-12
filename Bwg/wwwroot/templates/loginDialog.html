@@ -8,14 +8,64 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="row">
+
+                        <!--            <div class="row">
                             <h4>Jesteś partnerem?</h4>
                             </br>
                         </div>
                         <div class="row" style="text-align: center">
                             <button type="button" class="btn btn-success" ng-click="goToLogin()">Zaloguj się</button>
                             </br>
-                        </div>
+                        </div> -->
+
+                        <!--  <form id="login-form" action="https://crm.bwg.com.pl/Account/Login" method="post" role="form" style="display: block;" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="text" name="email" id="Email" tabindex="1" class="form-control" placeholder="email" value="">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="Password" tabindex="2" class="form-control" placeholder="password">
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3">
+                                        <input type="submit" name="login-submit" id="login-submit" tabindex="3" class="form-control btn btn-login" value="Log In">
+                                    </div>
+                                </div>
+                            </div>
+                        </form> -->
+                        <form id="login-form" action="https://crm.bwg.com.pl/Account/Login" method="post" role="form" style="display: block;" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="Email">Email</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="email" data-val="true" data-val-email="The Email field is not a valid e-mail address."
+                                        data-val-required="The Email field is required." id="Email" name="Email"/>
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="Password">Password</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" type="password" data-val="true" data-val-required="The Password field is required." id="Password"
+                                        name="Password" />
+                                    <span class="text-danger field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <div class="checkbox">
+                                        <label for="RememberMe">
+                                <input data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" />
+                                Remember me?
+                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <button type="submit" class="btn btn-default">Log in</button>
+                                </div>
+                            </div>
+                        </form>
 
                     </div>
                     <div class="col-md-6">

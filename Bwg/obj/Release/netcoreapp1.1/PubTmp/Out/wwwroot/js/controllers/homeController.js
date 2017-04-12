@@ -1,4 +1,4 @@
-﻿angular.module('bwg.controllers').controller('HomeController',
+﻿angular.module('bwg.controllers').controller('HomeController', 
     function ($scope, $location, $anchorScroll, $window) {
 
         $scope.submitted = true;
@@ -14,10 +14,10 @@
         };
 
         $scope.goToLogin = function () {
-            $window.open('https://www.crm.bwg.com.pl/Account/Login', '_blank');
+            $window.open('https://crm.bwg.com.pl/Account/Login', '_blank');
         }
 
         $scope.goToRegister = function () {
-            $window.open('https://www.crm.bwg.com.pl/Account/Register/Contragent', '_blank');
+            $window.open('https://crm.bwg.com.pl/Account/Register/Contragent', '_blank');
         }
     })
