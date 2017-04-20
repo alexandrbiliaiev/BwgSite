@@ -313,8 +313,8 @@
                     <div class="col-xs-12 col-md-6 col-sm-12">
                         <ul>
                             <li style="text-align: center;">
-                                <p><b>BUSINESS WORK GROUP Sp. z o.o..</b></p>
-                                <p>ul. 29 Listopada 17B / 4 Skawina 32-050 </p>
+                                <p><b>BUSINESS WORK GROUP Sp. z o.o.</b></p>
+                                <p>ul. 29 Listopada 17B / 4 32-050 Skawina</p>
                                 <p>NIP: 9442254222, REGON: 366678359, KRS: 0000666400</p>
                                 <p>Nr. bankowy: </p>
                                 <p>Bank Zachodni WBK S.A. </p>
@@ -357,37 +357,40 @@
                     <div id="messages" class="alert alert-success" data-ng-show="messages" data-ng-bind="messages"></div>
                     <div data-ng-show="progress.active()" style="color: red; font-size: 50px;">Sending…</div>
                     <div class="col-xs-12 col-md-12 col-sm-12">
-                        <form name="emailForm" novalidate role="form">
+                        <form name="emailForm" role="form" ng-submit="send()">
 
-                            <div class="col-xs-12 col-md-4 col-sm-12">
+                            <div class="col-xs-12 col-md-3 col-sm-12">
                                 <div class="form-group">
                                     <label for="companyName">Nazwa firmy* </label>
-                                    <span class="label label-danger" ng-show="submitted && emailForm.companyName.$error.required">Pole wymagane!</span>
-                                    <input type="text" name="companyName" ng-model="companyName" class="form-control" required />
+                                    <input type="text" name="companyName" ng-model="mail.company" class="form-control" required />
                                 </div>
                             </div>
 
-                            <div class="col-xs-12 col-md-4 col-sm-12">
+                            <div class="col-xs-12 col-md-3 col-sm-12">
                                 <div class="form-group">
                                     <label for="name">Imie* </label>
-                                    <span class="label label-danger" data-ng-show="submitted && emailForm.name.$error.required">Pole wymagane!</span>
-                                    <input type="text" name="name" ng-model="name" class="form-control" required />
+                                    <input type="text" name="name" ng-model="mail.name" class="form-control" required />
                                 </div>
                             </div>
 
-                            <div class="col-xs-12 col-md-4 col-sm-12">
+                            <div class="col-xs-12 col-md-3 col-sm-12">
                                 <div class="form-group">
                                     <label for="email">E-mail*</label>
-                                    <span class="label label-danger" ng-show="submitted && emailForm.email.$error.required">Pole wymagane!</span>
-                                    <span class="label label-danger" ng-show="submitted && emailForm.$error.email">Nie poprawny email!</span>
-                                    <input type="email" name="email" ng-model="email" class="form-control" required />
+                                    <input type="email" name="email" ng-model="mail.email" class="form-control" required />
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-md-3 col-sm-12">
+                                <div class="form-group">
+                                    <label for="phone">Nr. Telefonu*</label>
+                                    <input type="text" name="phone" ng-model="mail.phone" class="form-control" required />
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-md-12 col-sm-12">
                                 <div class="form-group">
                                     <label for="theme">Temat</label>
-                                    <input type="text" name="theme" ng-model="theme" class="form-control" />
+                                    <input type="text" name="theme" ng-model="mail.subject" class="form-control" />
                                 </div>
                             </div>
 
@@ -395,13 +398,14 @@
                                 <div class="form-group">
                                     <div class="form-group">
                                         <label for="text">Treść</label>
-                                        <textarea style="width: 100%" name="text" ng-model="text" class="form-control" />
+                                        <textarea style="width: 100%" name="text" ng-model="mail.text" class="form-control" />
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-xs-12 col-md-12 col-sm-12">
-                                <button data-ng-disabled="progress.active()" data-ng-click="submit(helpForm)" class="btn btn-default">Wyślij</button>
+                                <button type="submit" class="btn btn-default">Wyślij</button>
+                                <span ng-show="sent" style="color:green;">E-mail został wysłany!</span>
                             </div>
 
                         </form>

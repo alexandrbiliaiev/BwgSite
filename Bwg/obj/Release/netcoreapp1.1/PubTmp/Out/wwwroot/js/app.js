@@ -1,4 +1,4 @@
-﻿var app = angular.module('bwg', ['bwg.controllers', 'ui.router'])
+﻿var app = angular.module('bwg', ['bwg.controllers','bwg.services', 'ui.router'])
 
 
 app.config(function ($stateProvider, $locationProvider, $urlRouterProvider) {

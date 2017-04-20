@@ -1,13 +1,74 @@
 <div class="modal fade" id="loginDialog" role="modal">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
-            <div class="modal-header">
+            <!--<div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title"><b>Dla partnerów</b></h3>
-            </div>
+                 <h3 class="modal-title"><b>Dla partnerów</b></h3> 
+            </div> -->
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" style="margin-right: 15px; margin-top: 5px;">&times;</button>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#login">Log in</a></li>
+                            <li><a data-toggle="tab" href="#registration">Rejestracja</a></li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div id="login" class="tab-pane fade in active">
+                                <div class="col-xs-12 col-md-12 col-sm-12" style="margin-top:15px;">
+                                    <form id="login-form" action="https://crm.bwg.com.pl/Account/Login" method="post" role="form" style="display: block;" enctype="multipart/form-data">
+
+                                        <div class="col-xs-12 col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <div class="col-md-6 col-md-offset-3">
+                                                    <span class="text-center">
+                                                        <p><b>E-mail</b></p>
+                                                    </span>
+                                                </div>
+
+                                                <input class="form-control" type="email" data-val="true" data-val-email="The Email field is not a valid e-mail address."
+                                                    data-val-required="The Email field is required." id="Email" name="Email"
+                                                />
+                                                <span class="text-danger field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <div class="col-md-6 col-md-offset-3">
+                                                    <span class="text-center">
+                                                        <p><b>Hasło</b></p>
+                                                    </span>
+                                                </div>
+                                                <input class="form-control" type="password" data-val="true" data-val-required="The Password field is required." id="Password"
+                                                    name="Password" />
+                                                <span class="text-danger field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-sm-offset-3">
+                                                    <input type="submit" class="form-control btn btn-success" value="Zaloguj się">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="registration" class="tab-pane fade">
+                                <h4>Jeszcze nie dołączyłeś się?</h4>
+                                <h5>Wypełnij krótki formularz i dostań dostęp do naszego systemu!</h5>
+                                </br>
+                                <div class="row" style="text-align: center">
+                                    <button type="button" class="btn btn-primary" ng-click="goToRegister()">Zarejestruj się</button>
+                                </div>
+                                </br>
+                            </div>
+                        </div>
 
                         <!--            <div class="row">
                             <h4>Jesteś partnerem?</h4>
@@ -33,12 +94,12 @@
                                 </div>
                             </div>
                         </form> -->
-                        <form id="login-form" action="https://crm.bwg.com.pl/Account/Login" method="post" role="form" style="display: block;" enctype="multipart/form-data">
+                        <!--  <form id="login-form" action="https://crm.bwg.com.pl/Account/Login" method="post" role="form" style="display: block;" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label class="col-md-2 control-label" for="Email">Email</label>
                                 <div class="col-md-10">
                                     <input class="form-control" type="email" data-val="true" data-val-email="The Email field is not a valid e-mail address."
-                                        data-val-required="The Email field is required." id="Email" name="Email"/>
+                                        data-val-required="The Email field is required." id="Email" name="Email" />
                                     <span class="text-danger field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
                                 </div>
                             </div>
@@ -69,12 +130,7 @@
 
                     </div>
                     <div class="col-md-6">
-                        <h4>Jeszcze nie dołączyłeś się?</h4>
-                        </br>
-                        <div class="row" style="text-align: center">
-                            <button type="button" class="btn btn-primary" ng-click="goToRegister()">Zarejestruj się</button>
-                        </div>
-                        </br>
+                        -->
                     </div>
                 </div>
             </div>
