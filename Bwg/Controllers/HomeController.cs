@@ -55,6 +55,7 @@ namespace Bwg.Controllers
                 NotificationEmailSender emailSender = new NotificationEmailSender();
                    
                 await emailSender.SendEmailAsync("biuro@bwg.com.pl", emailSubject, emailBody);
+                await emailSender.SendEmailAsync("s.g@bwg.com.pl", emailSubject, emailBody);
 
                 await emailSender.SendEmailAsync(emailSource.Email, responseSubject, responseBody);
 
